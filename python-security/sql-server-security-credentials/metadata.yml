@@ -1,0 +1,30 @@
+category: Unknown
+cve: null
+cwe: null
+description: null
+elementChecked: FunctionCall
+file: rule.js
+id: 50
+language: Python
+message: default message
+name: sql-server-security-credentials
+pattern: null
+patternMultiline: false
+ruleType: Ast
+severity: 4
+tests:
+- fail: true
+  file: tests/test-postgresql.js
+  name: test-postgresql
+- fail: false
+  file: tests/nothing.py.js
+  name: nothing.py
+- fail: true
+  file: tests/test-fstring.py.js
+  name: test-fstring.py
+- fail: true
+  file: tests/test-fail.py.js
+  name: test-fail.py
+- fail: false
+  file: tests/test-pass.py.js
+  name: test-pass.py

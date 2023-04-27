@@ -1,0 +1,21 @@
+category: Best_Practice
+cve: null
+cwe: null
+description: Q2hpbGRyZW4gc2hvdWxkIGFsd2F5cyBiZSBhY3R1YWwgY2hpbGRyZW4sIG5vdCBwYXNzZWQgaW4gYXMgYSBwcm9wLgoKV2hlbiB1c2luZyBKU1gsIHRoZSBjaGlsZHJlbiBzaG91bGQgYmUgbmVzdGVkIGJldHdlZW4gdGhlIG9wZW5pbmcgYW5kIGNsb3NpbmcgdGFncy4gCgpWaWV3IGEgc2ltaWxhciBbRVNMaW50XShodHRwczovL2dpdGh1Yi5jb20vanN4LWVzbGludC9lc2xpbnQtcGx1Z2luLXJlYWN0L2Jsb2IvbWFzdGVyL2RvY3MvcnVsZXMvbm8tY2hpbGRyZW4tcHJvcC5tZCkgcnVsZS4=
+elementChecked: HtmlElement
+file: rule.js
+id: 111
+language: Javascript
+message: default message
+name: no-children-prop
+pattern: null
+patternMultiline: false
+ruleType: Ast
+severity: 3
+tests:
+- fail: true
+  file: tests/invalid-children-prop.js
+  name: invalid-children-prop
+- fail: false
+  file: tests/valid-children.jsx.js
+  name: valid-children.jsx

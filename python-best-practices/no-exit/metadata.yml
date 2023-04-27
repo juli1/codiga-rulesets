@@ -1,0 +1,21 @@
+category: Best_Practice
+cve: null
+cwe: null
+description: VXNlIGBzeXMuZXhpdCgpYCBpbnN0ZWFkIG9mIGBleGl0KClgLiBFeGl0IGlzIGEgW2J1aWx0aW5dKGh0dHBzOi8vZG9jcy5weXRob24ub3JnLzMvbGlicmFyeS9jb25zdGFudHMuaHRtbCNleGl0KSBhbmQgZG9uZSBtb3N0bHkgZm9yIHRoZSBjb25zb2xlLiBgc3lzLmV4aXQoKWAgaXMgZG9uZSBmb3IgcHJvZ3JhbSB3aXRoIGEgcHJvcGVyIHJldHVybiBhcmd1bWVudCAoW3NlZSBkb2N1bWVudGF0aW9uXShodHRwczovL2RvY3MucHl0aG9uLm9yZy8zL2xpYnJhcnkvc3lzLmh0bWwjc3lzLmV4aXQpKS4=
+elementChecked: FunctionCall
+file: rule.js
+id: 11
+language: Python
+message: default message
+name: no-exit
+pattern: null
+patternMultiline: false
+ruleType: Ast
+severity: 4
+tests:
+- fail: false
+  file: tests/use-sys-exit.py.js
+  name: use-sys-exit.py
+- fail: true
+  file: tests/use-exit.py.js
+  name: use-exit.py

@@ -1,0 +1,1 @@
+Do not use `variable == True`, just use `variable`.

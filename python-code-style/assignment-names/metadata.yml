@@ -1,0 +1,24 @@
+category: Unknown
+cve: null
+cwe: null
+description: null
+elementChecked: Assignment
+file: rule.js
+id: 47
+language: Python
+message: default message
+name: assignment-names
+pattern: null
+patternMultiline: false
+ruleType: Ast
+severity: 4
+tests:
+- fail: false
+  file: tests/two-consecutive-capitals.py.js
+  name: two-consecutive-capitals.py
+- fail: true
+  file: tests/simple_variable.py.js
+  name: simple_variable.py
+- fail: true
+  file: tests/variable-list.py.js
+  name: variable-list.py

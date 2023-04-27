@@ -1,0 +1,21 @@
+category: Code_Style
+cve: null
+cwe: null
+description: RG8gbm90IHVzZSBgdmFyaWFibGUgPT0gVHJ1ZWAsIGp1c3QgdXNlIGB2YXJpYWJsZWAu
+elementChecked: IfCondition
+file: rule.js
+id: 14
+language: Python
+message: default message
+name: no-if-true
+pattern: null
+patternMultiline: false
+ruleType: Ast
+severity: 4
+tests:
+- fail: false
+  file: tests/if-without-true.py.js
+  name: if-without-true.py
+- fail: true
+  file: tests/if-true.py.js
+  name: if-true.py

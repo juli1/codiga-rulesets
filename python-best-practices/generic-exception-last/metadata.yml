@@ -1,0 +1,24 @@
+category: Unknown
+cve: null
+cwe: null
+description: null
+elementChecked: TryBlock
+file: rule.js
+id: 232
+language: Python
+message: default message
+name: generic-exception-last
+pattern: null
+patternMultiline: false
+ruleType: Ast
+severity: 4
+tests:
+- fail: false
+  file: tests/multiple-exceptions-error.py.js
+  name: multiple-exceptions-error.py
+- fail: false
+  file: tests/multiple-exceptions-error.py.js
+  name: multiple-exceptions-error.py
+- fail: false
+  file: tests/multiple-exceptions-error.py.js
+  name: multiple-exceptions-error.py

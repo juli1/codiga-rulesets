@@ -1,0 +1,1 @@
+Do not use `any` for variable definition. Prefer to have a clear type defined.

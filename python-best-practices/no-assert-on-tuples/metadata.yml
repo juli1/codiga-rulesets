@@ -1,0 +1,21 @@
+category: Unknown
+cve: null
+cwe: null
+description: null
+elementChecked: Any
+file: rule.js
+id: 229
+language: Python
+message: default message
+name: no-assert-on-tuples
+pattern: null
+patternMultiline: false
+ruleType: Ast
+severity: 4
+tests:
+- fail: false
+  file: tests/assert-single-value.py.js
+  name: assert-single-value.py
+- fail: false
+  file: tests/assert-tuples.py.js
+  name: assert-tuples.py

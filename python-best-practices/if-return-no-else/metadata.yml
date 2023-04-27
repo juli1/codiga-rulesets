@@ -1,0 +1,21 @@
+category: Unknown
+cve: null
+cwe: null
+description: null
+elementChecked: IfCondition
+file: rule.js
+id: 233
+language: Python
+message: default message
+name: if-return-no-else
+pattern: null
+patternMultiline: false
+ruleType: Ast
+severity: 4
+tests:
+- fail: true
+  file: tests/if-with-return.py.js
+  name: if-with-return.py
+- fail: false
+  file: tests/if-with-return.py.js
+  name: if-with-return.py

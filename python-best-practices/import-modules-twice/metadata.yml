@@ -1,0 +1,21 @@
+category: Unknown
+cve: null
+cwe: null
+description: null
+elementChecked: Any
+file: rule.js
+id: 252
+language: Python
+message: default message
+name: import-modules-twice
+pattern: null
+patternMultiline: false
+ruleType: Ast
+severity: 4
+tests:
+- fail: false
+  file: tests/import-twice.py.js
+  name: import-twice.py
+- fail: false
+  file: tests/import-twice.py.js
+  name: import-twice.py

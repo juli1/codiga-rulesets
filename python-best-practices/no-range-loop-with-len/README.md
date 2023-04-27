@@ -1,0 +1,1 @@
+Do not iterate over an array using `for in range(len(array))`. Use instead `for i in array`.

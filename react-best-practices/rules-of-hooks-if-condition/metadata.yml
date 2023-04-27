@@ -1,0 +1,21 @@
+category: Unknown
+cve: null
+cwe: null
+description: null
+elementChecked: IfCondition
+file: rule.js
+id: 149
+language: Javascript
+message: default message
+name: rules-of-hooks-if-condition
+pattern: null
+patternMultiline: false
+ruleType: Ast
+severity: 4
+tests:
+- fail: true
+  file: tests/test-use-effect.ts.js
+  name: test-use-effect.ts
+- fail: true
+  file: tests/hooks-in-if-condition.js.js
+  name: hooks-in-if-condition.js

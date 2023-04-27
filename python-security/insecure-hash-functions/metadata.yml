@@ -1,0 +1,27 @@
+category: Security
+cve: null
+cwe: '327'
+description: RG8gbm90IHVzZSBhIGJyb2tlbiBvciByaXNreSBjcnlwdG9ncmFwaGljIGFsZ29yaXRobS4gVGhpcyBleHBvc2VzIHlvdSB0byB1bndhbnRlZCBhdHRhY2tzLgoKSXQgY2hlY2tzIHRoZSBmb2xsb3dpbmcgbW9kdWxlcwogLSBbaGFzaGxpYl0oaHR0cHM6Ly9kb2NzLnB5dGhvbi5vcmcvMy9saWJyYXJ5L2hhc2hsaWIuaHRtbCkKIC0gW2NyeXB0b2dyYXBoeV0oaHR0cHM6Ly9jcnlwdG9ncmFwaHkuaW8vKQoKKipMZWFybiBNb3JlKioKCiAtIFtDV0UtMzI3XShodHRwczovL2N3ZS5taXRyZS5vcmcvZGF0YS9kZWZpbml0aW9ucy8zMjcuaHRtbCkgLSBVc2Ugb2YgYSBCcm9rZW4gb3IgUmlza3kgQ3J5cHRvZ3JhcGhpYyBBbGdvcml0aG0KIC0gW0NXRS0zMjhdKGh0dHBzOi8vY3dlLm1pdHJlLm9yZy9kYXRhL2RlZmluaXRpb25zLzMyOC5odG1sKSAtIFVzZSBvZiBXZWFrIEhhc2g=
+elementChecked: FunctionCall
+file: rule.js
+id: 8
+language: Python
+message: default message
+name: insecure-hash-functions
+pattern: null
+patternMultiline: false
+ruleType: Ast
+severity: 2
+tests:
+- fail: true
+  file: tests/cryptography-fail.py.js
+  name: cryptography-fail.py
+- fail: true
+  file: tests/cryptography-fail.py.js
+  name: cryptography-fail.py
+- fail: false
+  file: tests/cryptography-fail.py.js
+  name: cryptography-fail.py
+- fail: true
+  file: tests/hashlib-fail.py.js
+  name: hashlib-fail.py

@@ -1,0 +1,21 @@
+category: Unknown
+cve: null
+cwe: null
+description: null
+elementChecked: IfCondition
+file: rule.js
+id: 242
+language: Python
+message: default message
+name: no-double-not
+pattern: null
+patternMultiline: false
+ruleType: Ast
+severity: 4
+tests:
+- fail: true
+  file: tests/error.py.js
+  name: error.py
+- fail: false
+  file: tests/no-error.py.js
+  name: no-error.py

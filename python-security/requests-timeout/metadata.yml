@@ -1,0 +1,30 @@
+category: Safety
+cve: null
+cwe: '1088'
+description: QWNjZXNzIHRvIHJlbW90ZSByZXNvdXJjZXMgc2hvdWxkIGFsd2F5cyB1c2UgYSB0aW1lb3V0IGFuZCBhcHByb3ByaWF0ZWx5IGhhbmRsZSB0aGUgdGltZW91dCBhbmQgcmVjb3ZlcnkuIFdoZW4gdXNpbmcgYHJlcXVlc3RzLmdldGAsIGByZXF1ZXN0cy5wdXRgLCBgcmVxdWVzdHMucGF0Y2hgLCBldGMuIC0gd2Ugc2hvdWxkIGFsd2F5cyB1c2UgYSBgdGltZW91dGAgYXMgYW4gYXJndW1lbnQuCgoKKipMZWFybiBNb3JlKioKCiAtIFtDV0UtMTA4OF0oaHR0cHM6Ly9jd2UubWl0cmUub3JnL2RhdGEvZGVmaW5pdGlvbnMvMTA4OC5odG1sKSAtIFN5bmNocm9ub3VzIEFjY2VzcyBvZiBSZW1vdGUgUmVzb3VyY2Ugd2l0aG91dCBUaW1lb3V0CiAtIFtQeXRob24gQmVzdCBQcmFjdGljZXM6IGFsd2F5cyB1c2UgYSB0aW1lb3V0IHdpdGggdGhlIHJlcXVlc3RzIGxpYnJhcnkKXShodHRwczovL3d3dy5jb2RpZ2EuaW8vYmxvZy9weXRob24tcmVxdWVzdHMtdGltZW91dC8p
+elementChecked: FunctionCall
+file: rule.js
+id: 16
+language: Python
+message: default message
+name: requests-timeout
+pattern: null
+patternMultiline: false
+ruleType: Ast
+severity: 3
+tests:
+- fail: true
+  file: tests/test-import-from.py.js
+  name: test-import-from.py
+- fail: false
+  file: tests/no-requests-package-used.py.js
+  name: no-requests-package-used.py
+- fail: true
+  file: tests/requests-put-no-timeout.py.js
+  name: requests-put-no-timeout.py
+- fail: false
+  file: tests/requests-get-with-timeout.py.js
+  name: requests-get-with-timeout.py
+- fail: true
+  file: tests/requests-get-no-timeout.py.js
+  name: requests-get-no-timeout.py

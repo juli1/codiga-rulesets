@@ -1,0 +1,21 @@
+category: Best_Practice
+cve: null
+cwe: null
+description: VGhpcyBydWxlIHdhcm5zIHdoZW4geW91J3ZlIHNldCB0aGUgdmFsdWUgcHJvcCBvZiBhIGBDb250ZXh0LlByb3ZpZGVyYCBhcyBhIG5vbi1zdGFibGUgdmFsdWUgKGkuZS4gb2JqZWN0IGlkZW50aXRpZXMpLgoKRml4aW5nIHlvdXIgdmFsdWUgcHJvcCBieSBwbGFjaW5nIGl0IGhpZ2hlciBpbiBhIGB1c2VNZW1vYCBvciBgdXNlQ2FsbGJhY2tgIGhvb2sgY2FuIHNhdmUgeW91IHVubmVjZXNzYXJ5IHJlLXJlbmRlcnMuCgpFU0xpbnQgaGFzIGEgc2ltaWxhciBydWxlIFtyZWFjdC9qc3gtbm8tY29uc3RydWN0ZWQtY29udGV4dC12YWx1ZXNdKGh0dHBzOi8vZ2l0aHViLmNvbS9qc3gtZXNsaW50L2VzbGludC1wbHVnaW4tcmVhY3QvYmxvYi9tYXN0ZXIvZG9jcy9ydWxlcy9qc3gtbm8tY29uc3RydWN0ZWQtY29udGV4dC12YWx1ZXMubWQp
+elementChecked: HtmlElement
+file: rule.js
+id: 124
+language: Javascript
+message: default message
+name: no-constructed-context-values
+pattern: null
+patternMultiline: false
+ruleType: Ast
+severity: 3
+tests:
+- fail: true
+  file: tests/incorrect.jsx.js
+  name: incorrect.jsx
+- fail: false
+  file: tests/correct.jsx.js
+  name: correct.jsx

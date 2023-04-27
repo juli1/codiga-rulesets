@@ -1,0 +1,21 @@
+category: Unknown
+cve: null
+cwe: null
+description: null
+elementChecked: Any
+file: rule.js
+id: 245
+language: Python
+message: default message
+name: unreachable-code
+pattern: null
+patternMultiline: false
+ruleType: Ast
+severity: 4
+tests:
+- fail: false
+  file: tests/error.py.js
+  name: error.py
+- fail: false
+  file: tests/error.py.js
+  name: error.py

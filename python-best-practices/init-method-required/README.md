@@ -1,0 +1,1 @@
+Ensure that a class has an `__init__` method.

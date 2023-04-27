@@ -1,0 +1,21 @@
+category: Best_Practice
+cve: null
+cwe: null
+description: SW4gRUNNQVNjcmlwdCAyMDE1LCB0aGUga2V5d29yZHMgImxldCIgYW5kICJjb25zdCIgd2FzIGludHJvZHVjZWQgZm9yIGJsb2NrLXNjb3BlIHZhcmlhYmxlIGRlY2xhcmF0aW9uLiAKClZhcmlhYmxlcyBkZWNsYXJlZCB3aXRoICJjb25zdCIgYXJlIHJlYWQtb25seSBhbmQgY2Fubm90IGJlIHJlYXNzaWduZWQuIFVzaW5nICJsZXQiIGluc3RlYWQgb2YgInZhciIgY2FuIGhlbHAgcHJldmVudCBjb25mdXNpb24gYW5kIGlzc3VlcyByZWxhdGVkIHRvIHZhcmlhYmxlIHNjb3BlLiAKCldoaWxlIHRoZXNlIG5ldyBrZXl3b3JkcyBwcm92aWRlIG1vcmUgcHJlY2lzZSB2YXJpYWJsZSB0eXBlcywgdGhleSBtYXkgcmVxdWlyZSBzb21lIHJlZmFjdG9yaW5nIGFuZCBtYXkgY2F1c2Ugc3ludGF4IGVycm9ycyBpbiBvbGRlciBlbnZpcm9ubWVudHMuIAoKSXQgaXMgcmVjb21tZW5kZWQgdG8gdXNlICJsZXQiIG9yICJjb25zdCIgaW5zdGVhZCBvZiAidmFyIiBpbiBlbnZpcm9ubWVudHMgdGhhdCBzdXBwb3J0IEVDTUFTY3JpcHQgMjAxNS4=
+elementChecked: VariableDeclaration
+file: rule.js
+id: 203
+language: Javascript
+message: default message
+name: no-var
+pattern: null
+patternMultiline: false
+ruleType: Ast
+severity: 4
+tests:
+- fail: true
+  file: tests/var-usage.js.js
+  name: var-usage.js
+- fail: false
+  file: tests/let-const-usage.js.js
+  name: let-const-usage.js

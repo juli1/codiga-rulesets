@@ -1,0 +1,21 @@
+category: Unknown
+cve: null
+cwe: null
+description: null
+elementChecked: ClassDefinition
+file: rule.js
+id: 236
+language: Python
+message: default message
+name: class-methods-use-self
+pattern: null
+patternMultiline: false
+ruleType: Ast
+severity: 4
+tests:
+- fail: false
+  file: tests/pass.py.js
+  name: pass.py
+- fail: false
+  file: tests/error.py.js
+  name: error.py

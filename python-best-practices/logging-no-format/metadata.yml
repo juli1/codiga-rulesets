@@ -1,0 +1,21 @@
+category: Unknown
+cve: null
+cwe: null
+description: null
+elementChecked: FunctionCall
+file: rule.js
+id: 251
+language: Python
+message: default message
+name: logging-no-format
+pattern: null
+patternMultiline: false
+ruleType: Ast
+severity: 4
+tests:
+- fail: false
+  file: tests/pass.js
+  name: pass
+- fail: true
+  file: tests/error.py.js
+  name: error.py

@@ -1,0 +1,21 @@
+category: Best_Practice
+cve: null
+cwe: null
+description: VGhpcyBydWxlIGVuZm9yY2VzIHNldHRpbmcgYSBgdHlwZWAgb24gYnV0dG9uIGVsZW1lbnRzLgoKSWYgbWlzc2luZyBhIGB0eXBlYCBwcm9wLCB5b3UgY2FuIGZpeCBpdCB3aXRoIG9uZSBvZiB0aGUgYGJ1dHRvbmAsIGBzdWJtaXRgLCBvciBgcmVzZXRgIG9wdGlvbnMuCgpWaWV3IGEgc2ltaWxhciBbRVNMaW50XShodHRwczovL2dpdGh1Yi5jb20vanN4LWVzbGludC9lc2xpbnQtcGx1Z2luLXJlYWN0L2Jsb2IvbWFzdGVyL2RvY3MvcnVsZXMvYnV0dG9uLWhhcy10eXBlLm1kKSBydWxlLg==
+elementChecked: HtmlElement
+file: rule.js
+id: 109
+language: Javascript
+message: default message
+name: button-has-type
+pattern: null
+patternMultiline: false
+ruleType: Ast
+severity: 3
+tests:
+- fail: true
+  file: tests/missing-type.jsx.js
+  name: missing-type.jsx
+- fail: false
+  file: tests/valid-type.jsx.js
+  name: valid-type.jsx

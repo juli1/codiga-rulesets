@@ -1,0 +1,1 @@
+stmt = "UPDATE analysis_results SET running_time_sec='{0}' WHERE id={1}".format(nsec, id)

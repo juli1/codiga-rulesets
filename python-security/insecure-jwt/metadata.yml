@@ -1,0 +1,24 @@
+category: Security
+cve: null
+cwe: '287'
+description: VXNlIGAidmVyaWZ5X3NpZ25hdHVyZSI6IEZhbHNlYCB3aGVuIGRlY29kaW5nIGEgSldUIGJ5cGFzc2VzIHNlY3VyaXR5IGFuZCBtYXkgYXV0aGVudGljYXRlIHVzZXJzIHRoYXQgc2hvdWxkIG5vdCBiZSBhdXRoZW50aWNhdGVkLgoKKipTZWUgQWxzbyoqCgogLSBbQ1dFLTI4NyAtIEltcHJvcGVyIEF1dGhlbnRpY2F0aW9uXShodHRwczovL2N3ZS5taXRyZS5vcmcvZGF0YS9kZWZpbml0aW9ucy8yODcuaHRtbCk=
+elementChecked: FunctionCall
+file: rule.js
+id: 45
+language: Python
+message: default message
+name: insecure-jwt
+pattern: null
+patternMultiline: false
+ruleType: Ast
+severity: 1
+tests:
+- fail: false
+  file: tests/insecure-jwt.py.js
+  name: insecure-jwt.py
+- fail: false
+  file: tests/no-import.py.js
+  name: no-import.py
+- fail: true
+  file: tests/secure-jwt.py.js
+  name: secure-jwt.py

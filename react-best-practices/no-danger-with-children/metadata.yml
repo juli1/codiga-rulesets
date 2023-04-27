@@ -1,0 +1,21 @@
+category: Error_Prone
+cve: null
+cwe: null
+description: VGhpcyBydWxlIHNob3dzIGEgd2FybmluZyB3aGVuIGEgRE9NIGVsZW1lbnQgb3IgY29tcG9uZW50IGlzIHVzaW5nIGJvdGggY2hpbGRyZW4gYW5kIHRoZSBkYW5nZXJvdXNseVNldElubmVySFRNTCBwcm9wIGF0IHRoZSBzYW1lIHRpbWUuCgpSZWFjdCB3aWxsIHRocm93IGEgd2FybmluZyBpZiB0aGlzIHJ1bGUgaXMgaWdub3JlZC4KClRoaXMgcnVsZSBpcyBzaW1pbGFyIHRvIHRoZSBbcmVhY3Qvbm8tZGFuZ2VyLXdpdGgtY2hpbGRyZW5dKGh0dHBzOi8vZ2l0aHViLmNvbS9qc3gtZXNsaW50L2VzbGludC1wbHVnaW4tcmVhY3QvYmxvYi9tYXN0ZXIvZG9jcy9ydWxlcy9uby1kYW5nZXItd2l0aC1jaGlsZHJlbi5tZCkgcnVsZSBmcm9tIEVTTGludC4=
+elementChecked: HtmlElement
+file: rule.js
+id: 123
+language: Javascript
+message: default message
+name: no-danger-with-children
+pattern: null
+patternMultiline: false
+ruleType: Ast
+severity: 2
+tests:
+- fail: true
+  file: tests/double-children.jsx.js
+  name: double-children.jsx
+- fail: false
+  file: tests/valid.jsx.js
+  name: valid.jsx

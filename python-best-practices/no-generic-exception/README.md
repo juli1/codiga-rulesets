@@ -1,0 +1,1 @@
+The specific error must be raised, not a generic `Exception`. Use the exact exception(s) you want to handle and have a recovery handler for each exception that your program may raise.

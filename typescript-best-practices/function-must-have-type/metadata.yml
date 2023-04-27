@@ -1,0 +1,18 @@
+category: Unknown
+cve: null
+cwe: null
+description: null
+elementChecked: FunctionDefinition
+file: rule.js
+id: 151
+language: Typescript
+message: default message
+name: function-must-have-type
+pattern: null
+patternMultiline: false
+ruleType: Ast
+severity: 4
+tests:
+- fail: true
+  file: tests/no-type.ts.js
+  name: no-type.ts

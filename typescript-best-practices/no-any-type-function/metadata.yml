@@ -1,0 +1,24 @@
+category: Best_Practice
+cve: null
+cwe: null
+description: TWFrZSBzdXJlIHdlIG5ldmVyIHVzZSBgYW55YCBhcyBhIHR5cGUuIFR5cGVTY3JpcHQgaXMgYSB0eXBlLXNhZmUgbGFuZ3VhZ2UgYW5kIHByb3BlcnR5IHR5cGVzIHNob3VsZCBiZSB1c2VkLiBTZWUgb3VyIFtibG9nIHBvc3RdKGh0dHBzOi8vd3d3LmNvZGlnYS5pby9ibG9nL3R5cGVzY3JpcHQtYXZvaWQtdHlwZS1hbnkvKSBmb3IgbW9yZSBkZXRhaWxzLg==
+elementChecked: FunctionDefinition
+file: rule.js
+id: 148
+language: Typescript
+message: default message
+name: no-any-type-function
+pattern: null
+patternMultiline: false
+ruleType: Ast
+severity: 3
+tests:
+- fail: true
+  file: tests/test-any.ts.js
+  name: test-any.ts
+- fail: false
+  file: tests/test-no-type.ts.js
+  name: test-no-type.ts
+- fail: false
+  file: tests/test-number.ts.js
+  name: test-number.ts

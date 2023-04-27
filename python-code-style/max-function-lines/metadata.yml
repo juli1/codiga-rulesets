@@ -1,0 +1,21 @@
+category: Unknown
+cve: null
+cwe: null
+description: null
+elementChecked: FunctionDefinition
+file: rule.js
+id: 235
+language: Python
+message: default message
+name: max-function-lines
+pattern: null
+patternMultiline: false
+ruleType: Ast
+severity: 4
+tests:
+- fail: false
+  file: tests/no-error.py.js
+  name: no-error.py
+- fail: false
+  file: tests/no-error.py.js
+  name: no-error.py

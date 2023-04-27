@@ -1,0 +1,27 @@
+category: Security
+cve: null
+cwe: '502'
+description: QXZvaWQgZGVzZXJpYWxpemF0aW9uIG9mIHVuc3RydXN0ZWQgWUFNTCBkYXRhIHZpYSBwb3RlbnRpYWwgdW5zYWZlIGB5YW1sLmxvYWRgLgoKVGhpcyBydWxlIGNoZWNrcyB0aGF0IHRoZSBgeWFtbGAgbW9kdWxlIGlzIHVzZWQgYW5kIHRoZSBgbG9hZGAgbWV0aG9kIGlzIHVzZWQuIEl0IHJlY29tbWVuZHMgdGhlIHVzYWdlIG9mIGBzYWZlX2xvYWRgIHRoYXQgcHJldmVudHMgdW5zYWZlIGRlc2VyaWFsaXphdGlvbi4KCioqU2VlIEFsc28qKgoKIC0gW0NXRS01MDIgLSBEZXNlcmlhbGl6YXRpb24gb2YgVW50cnVzdGVkIERhdGFdKGh0dHBzOi8vY3dlLm1pdHJlLm9yZy9kYXRhL2RlZmluaXRpb25zLzUwMi5odG1sKQ==
+elementChecked: FunctionCall
+file: rule.js
+id: 46
+language: Python
+message: default message
+name: yaml-load
+pattern: null
+patternMultiline: false
+ruleType: Ast
+severity: 2
+tests:
+- fail: true
+  file: tests/use-import-from.py.js
+  name: use-import-from.py
+- fail: false
+  file: tests/safe-loader.py.js
+  name: safe-loader.py
+- fail: true
+  file: tests/insecure-yaml-load.py.js
+  name: insecure-yaml-load.py
+- fail: false
+  file: tests/no-import.py.js
+  name: no-import.py

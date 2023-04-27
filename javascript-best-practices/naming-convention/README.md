@@ -1,0 +1,1 @@
+This rule helps keep your variable naming conventions consistent.

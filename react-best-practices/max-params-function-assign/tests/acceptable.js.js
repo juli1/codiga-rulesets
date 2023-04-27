@@ -1,0 +1,10 @@
+const a = () => {};
+const b = (foo) => {};
+const c = (foo, bar) => {};
+const d = (foo, bar, baz) => {};
+const e = (foo, bar, baz, qux) => {};
+const f = function() {};
+const g = function(foo) {};
+const h = function(foo, bar) {};
+const i = function(foo, bar, baz) {};
+const j = function(foo, bar, baz, qux) {};

@@ -1,0 +1,24 @@
+category: Unknown
+cve: null
+cwe: null
+description: null
+elementChecked: FunctionCall
+file: rule.js
+id: 57
+language: Python
+message: default message
+name: request-verify
+pattern: null
+patternMultiline: false
+ruleType: Ast
+severity: 4
+tests:
+- fail: false
+  file: tests/verify-true.py.js
+  name: verify-true.py
+- fail: true
+  file: tests/test-import-from.py.js
+  name: test-import-from.py
+- fail: false
+  file: tests/no-verify.py.js
+  name: no-verify.py

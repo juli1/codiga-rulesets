@@ -1,0 +1,21 @@
+category: Unknown
+cve: null
+cwe: null
+description: RW5zdXJlIHRoYXQgdGhlIGAuZm9ybWF0YCBtZXRob2QgaGFzIGVub3VnaCBhcmd1bWVudHMu
+elementChecked: FunctionCall
+file: rule.js
+id: 249
+language: Python
+message: default message
+name: format-string
+pattern: null
+patternMultiline: false
+ruleType: Ast
+severity: 4
+tests:
+- fail: false
+  file: tests/error2.py.js
+  name: error2.py
+- fail: true
+  file: tests/error.py.js
+  name: error.py

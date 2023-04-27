@@ -1,0 +1,21 @@
+category: Best_Practice
+cve: null
+cwe: null
+description: VGhpcyBydWxlIGRldGVjdHMgd2hlbiB5b3UgaGF2ZSBhIGZyYWdtZW50IHRoYXQncyByZWR1bmRhbnQuCgpBIGZyYWdtZW50IGlzIGNvbnNpZGVyZWQgcmVkdW5kYW50IHdoZW4gaXQgY29udGFpbnMgb25seSBvbmUgY2hpbGQgb3IgaWYgaXQncyBhIGNoaWxkIG9mIGFuIEhUTUwgZWxlbWVudCwgYW5kIGlzIG5vdCBhIFtrZXllZCBmcmFnbWVudF0oaHR0cHM6Ly9yZWFjdGpzLm9yZy9kb2NzL2ZyYWdtZW50cy5odG1sI2tleWVkLWZyYWdtZW50cykKClZpZXcgYSBzaW1pbGFyIHJ1bGUgZnJvbSBFU0xpbnQ6IFtyZWFjdC9qc3gtbm8tdXNlbGVzcy1mcmFnbWVudF0oaHR0cHM6Ly9naXRodWIuY29tL2pzeC1lc2xpbnQvZXNsaW50LXBsdWdpbi1yZWFjdC9ibG9iL21hc3Rlci9kb2NzL3J1bGVzL2pzeC1uby11c2VsZXNzLWZyYWdtZW50Lm1kKQ==
+elementChecked: HtmlElement
+file: rule.js
+id: 125
+language: Javascript
+message: default message
+name: no-useless-fragment
+pattern: null
+patternMultiline: false
+ruleType: Ast
+severity: 4
+tests:
+- fail: true
+  file: tests/incorrect-usage.jsx.js
+  name: incorrect-usage.jsx
+- fail: false
+  file: tests/correct-usage.jsx.js
+  name: correct-usage.jsx

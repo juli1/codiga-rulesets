@@ -1,0 +1,21 @@
+category: Best_Practice
+cve: null
+cwe: null
+description: Q29kZSBzaG91bGQgbm90IHJhaXNlIGBOb3RJbXBsZW1lbnRlZGAgYW5kIGluc3RlYWQgdXNlIGBOb3RJbXBsZW1lbnRlZEVycm9yYC4gYE5vdEltcGxlbWVudGVkYCBpcyBhIHZhbHVlIChhcyBwZXIgdGhlIFtkb2N1bWVudGF0aW9uXShodHRwczovL2RvY3MucHl0aG9uLm9yZy8zL2xpYnJhcnkvY29uc3RhbnRzLmh0bWwjTm90SW1wbGVtZW50ZWQpLCBub3QgYW4gZXhjZXB0aW9uLiBUaGUgcHJvcGVyIGV4Y2VwdGlvbiBpcyBbTm90SW1wbGVtZW50ZWRFcnJvcl0oaHR0cHM6Ly9kb2NzLnB5dGhvbi5vcmcvMy9saWJyYXJ5L2V4Y2VwdGlvbnMuaHRtbCNOb3RJbXBsZW1lbnRlZEVycm9yKQ==
+elementChecked: null
+file: rule.js
+id: 5
+language: Python
+message: default message
+name: raising-not-implemented
+pattern: raise ${exceptionName}
+patternMultiline: false
+ruleType: Pattern
+severity: 2
+tests:
+- fail: true
+  file: tests/raise-notimplemented.py.js
+  name: raise-notimplemented.py
+- fail: false
+  file: tests/raise-notimplementederror.py.js
+  name: raise-notimplementederror.py

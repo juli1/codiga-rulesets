@@ -1,0 +1,24 @@
+category: Unknown
+cve: null
+cwe: null
+description: null
+elementChecked: ClassDefinition
+file: rule.js
+id: 243
+language: Python
+message: default message
+name: context-manager-enter-exit-defined
+pattern: null
+patternMultiline: false
+ruleType: Ast
+severity: 4
+tests:
+- fail: true
+  file: tests/error2.py.js
+  name: error2.py
+- fail: true
+  file: tests/error1.py.js
+  name: error1.py
+- fail: false
+  file: tests/no-error.py.js
+  name: no-error.py

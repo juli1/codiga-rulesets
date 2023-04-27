@@ -1,0 +1,24 @@
+category: Best_Practice
+cve: null
+cwe: null
+description: VGhlcmUgd2VyZSB0d28gd2F5cyBzdXBwb3J0ZWQgYnkgUmVhY3QgdG8gcmVmZXIgdG8gY29tcG9uZW50cy4gCgpUaGUgZmlyc3Qgd2F5LCBwcm92aWRpbmcgYSBzdHJpbmcgaWRlbnRpZmllciwgaXMgbm93IGNvbnNpZGVyZWQgbGVnYWN5IGluIHRoZSBvZmZpY2lhbCBkb2N1bWVudGF0aW9uLiAKClRoZSBkb2N1bWVudGF0aW9uIG5vdyBwcmVmZXJzIGEgc2Vjb25kIG1ldGhvZCAtLSByZWZlcnJpbmcgdG8gY29tcG9uZW50cyBieSBzZXR0aW5nIGEgcHJvcGVydHkgb24gdGhlIGB0aGlzYCBvYmplY3QgaW4gdGhlIHJlZmVyZW5jZSBjYWxsYmFjayBvciBzZXR0aW5nIHRoZSBgcmVmYCB2YWx1ZSBnaXZlbiBmcm9tIGBSZWFjdC51c2VSZWZgLgoKVmlldyBhIHNpbWlsYXIgRVNMaW50LCBbcmVhY3Qvbm8tc3RyaW5nLXJlZnNdKGh0dHBzOi8vZ2l0aHViLmNvbS9qc3gtZXNsaW50L2VzbGludC1wbHVnaW4tcmVhY3QvYmxvYi9tYXN0ZXIvZG9jcy9ydWxlcy9uby1zdHJpbmctcmVmcy5tZCku
+elementChecked: HtmlElement
+file: rule.js
+id: 139
+language: Javascript
+message: default message
+name: no-string-refs
+pattern: null
+patternMultiline: false
+ruleType: Ast
+severity: 3
+tests:
+- fail: true
+  file: tests/incorrect.jsx.js
+  name: incorrect.jsx
+- fail: false
+  file: tests/correct.jsx.js
+  name: correct.jsx
+- fail: false
+  file: tests/correct-useref.jsx.js
+  name: correct-useref.jsx

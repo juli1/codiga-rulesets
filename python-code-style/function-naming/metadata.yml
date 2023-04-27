@@ -1,0 +1,21 @@
+category: Unknown
+cve: null
+cwe: null
+description: null
+elementChecked: FunctionDefinition
+file: rule.js
+id: 39
+language: Python
+message: default message
+name: function-naming
+pattern: null
+patternMultiline: false
+ruleType: Ast
+severity: 4
+tests:
+- fail: true
+  file: tests/arguments.py.js
+  name: arguments.py
+- fail: true
+  file: tests/camel-case.py.js
+  name: camel-case.py

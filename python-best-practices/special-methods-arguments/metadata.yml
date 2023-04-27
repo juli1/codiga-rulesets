@@ -1,0 +1,24 @@
+category: Unknown
+cve: null
+cwe: null
+description: null
+elementChecked: ClassDefinition
+file: rule.js
+id: 228
+language: Python
+message: default message
+name: special-methods-arguments
+pattern: null
+patternMultiline: false
+ruleType: Ast
+severity: 4
+tests:
+- fail: true
+  file: tests/next-with-error.py.js
+  name: next-with-error.py
+- fail: true
+  file: tests/add-with-more-than-one-arguments.py.js
+  name: add-with-more-than-one-arguments.py
+- fail: false
+  file: tests/no-error.py.js
+  name: no-error.py

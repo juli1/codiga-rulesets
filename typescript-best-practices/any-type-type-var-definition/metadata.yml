@@ -1,0 +1,24 @@
+category: Best_Practice
+cve: null
+cwe: null
+description: RG8gbm90IHVzZSBgYW55YCBmb3IgdmFyaWFibGUgZGVmaW5pdGlvbi4gUHJlZmVyIHRvIGhhdmUgYSBjbGVhciB0eXBlIGRlZmluZWQu
+elementChecked: VariableDeclaration
+file: rule.js
+id: 158
+language: Typescript
+message: default message
+name: any-type-type-var-definition
+pattern: null
+patternMultiline: false
+ruleType: Ast
+severity: 3
+tests:
+- fail: false
+  file: tests/var-string.ts.js
+  name: var-string.ts
+- fail: false
+  file: tests/var-number.ts.js
+  name: var-number.ts
+- fail: true
+  file: tests/var-object.ts.js
+  name: var-object.ts

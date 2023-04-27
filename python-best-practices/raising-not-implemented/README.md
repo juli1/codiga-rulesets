@@ -1,0 +1,1 @@
+Code should not raise `NotImplemented` and instead use `NotImplementedError`. `NotImplemented` is a value (as per the [documentation](https://docs.python.org/3/library/constants.html#NotImplemented), not an exception. The proper exception is [NotImplementedError](https://docs.python.org/3/library/exceptions.html#NotImplementedError)

@@ -1,0 +1,24 @@
+category: Best_Practice
+cve: null
+cwe: null
+description: VGhpcyBydWxlIGlzIHVzZWQgdG8gZW5mb3JjZSBwcm9wZXIgbmFtaW5nIGZvciBib29sZWFuIGFzc2lnbm1lbnRzLgoKVmlldyBhIHNpbWlsYXIgcnVsZSBmb3IgW0VTTGludF0oaHR0cHM6Ly9naXRodWIuY29tL2pzeC1lc2xpbnQvZXNsaW50LXBsdWdpbi1yZWFjdC9ibG9iL21hc3Rlci9kb2NzL3J1bGVzL2Jvb2xlYW4tcHJvcC1uYW1pbmcubWQpLg==
+elementChecked: Assignment
+file: rule.js
+id: 107
+language: Javascript
+message: default message
+name: boolean-naming
+pattern: null
+patternMultiline: false
+ruleType: Ast
+severity: 3
+tests:
+- fail: false
+  file: tests/valid-assignments.jsx.js
+  name: valid-assignments.jsx
+- fail: true
+  file: tests/invalid-assignments.jsx.js
+  name: invalid-assignments.jsx
+- fail: false
+  file: tests/skipped.jsx.js
+  name: skipped.jsx

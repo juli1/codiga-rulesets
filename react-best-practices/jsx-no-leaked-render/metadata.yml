@@ -1,0 +1,21 @@
+category: Error_Prone
+cve: null
+cwe: null
+description: null
+elementChecked: HtmlElement
+file: rule.js
+id: 121
+language: Javascript
+message: default message
+name: jsx-no-leaked-render
+pattern: null
+patternMultiline: false
+ruleType: Ast
+severity: 2
+tests:
+- fail: true
+  file: tests/invalid.jsx.js
+  name: invalid.jsx
+- fail: false
+  file: tests/valid.jsx.js
+  name: valid.jsx

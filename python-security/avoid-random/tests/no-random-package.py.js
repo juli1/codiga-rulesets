@@ -1,0 +1,1 @@
+n = random.random()

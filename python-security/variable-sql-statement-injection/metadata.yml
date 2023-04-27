@@ -1,0 +1,33 @@
+category: Unknown
+cve: null
+cwe: '89'
+description: Q2hlY2sgZm9yIGRlY2xhcmF0aW9ucyBvZiB2YXJpYWJsZXMgZm9yIGEgU1FMIHN0YXRlbWVudCB3aGVyZSB3ZSBoYXZlIHBvdGVudGlhbCBTUUwgaW5qZWN0aW9ucy4=
+elementChecked: Assignment
+file: rule.js
+id: 44
+language: Python
+message: default message
+name: variable-sql-statement-injection
+pattern: null
+patternMultiline: false
+ruleType: Ast
+severity: 1
+tests:
+- fail: true
+  file: tests/update-statement-format.py.js
+  name: update-statement-format.py
+- fail: true
+  file: tests/delete-format.py.js
+  name: delete-format.py
+- fail: true
+  file: tests/update.py.js
+  name: update.py
+- fail: true
+  file: tests/delete.py.js
+  name: delete.py
+- fail: true
+  file: tests/query-fstring.py.js
+  name: query-fstring.py
+- fail: true
+  file: tests/query-string.py.js
+  name: query-string.py

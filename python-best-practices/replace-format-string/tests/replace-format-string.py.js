@@ -1,0 +1,1 @@
+"my string {0}".format("foo")

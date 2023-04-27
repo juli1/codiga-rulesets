@@ -1,0 +1,1 @@
+jwt.decode(encoded, options={"verify_signature": True})

@@ -1,0 +1,30 @@
+category: Security
+cve: null
+cwe: '89'
+description: VGhpcyBydWxlIGNoZWNrcyB0aGF0IHRoZSB1c2VyIGRvZXMgbm90IHVzZSBhbnkgZm9ybWF0dGluZyBjb2RlIHRoYXQgd291bGQgdHJpZ2dlciBhIFNRTCBpbmplY3Rpb24uCgpUaGlzIHJ1bGUgd29ya3MgZm9yIGJvdGggTXlTUUwgYW5kIFBvc3RncmVTUUwuCgpTZWUgYWxzbyB0aGUgcnVsZSB0aGF0IGRldGVjdHMgW3ZhcmlhYmxlcyB1c2luZyBTUUwgc3RhdGVtZW50c10oaHR0cHM6Ly9hcHAuY29kaWdhLmlvL2h1Yi9ydWxlc2V0L3B5dGhvbi1zZWN1cml0eS9zcWwtc3RhdGVtZW50LWRlY2xhcmF0aW9uKS4KCkl0IGFsc28gY292ZXJzIFJBVyBTUUwgaW5zZXJ0aW9uIGZvciBbU1FMIEFsY2hlbXldKGh0dHBzOi8vd3d3LnNxbGFsY2hlbXkub3JnLykuCgoqKiBMZWFybiBNb3JlICoqCgogLSBbQ1dFLTg5XShodHRwczovL2N3ZS5taXRyZS5vcmcvZGF0YS9kZWZpbml0aW9ucy84OS5odG1sKQ==
+elementChecked: FunctionCall
+file: rule.js
+id: 23
+language: Python
+message: default message
+name: sql-injection
+pattern: null
+patternMultiline: false
+ruleType: Ast
+severity: 1
+tests:
+- fail: true
+  file: tests/sql-alchemy-errors.py.js
+  name: sql-alchemy-errors.py
+- fail: false
+  file: tests/sql-alchemy-no-error.py.js
+  name: sql-alchemy-no-error.py
+- fail: true
+  file: tests/format-string.py.js
+  name: format-string.py
+- fail: false
+  file: tests/no-f-string.py.js
+  name: no-f-string.py
+- fail: true
+  file: tests/mysql-injection-with-fstring.py.js
+  name: mysql-injection-with-fstring.py

@@ -1,0 +1,1 @@
+The call to `_create_unverified_context` from the ssl module bypass certificates verification. It should not be used and instead, certificates must be verified.

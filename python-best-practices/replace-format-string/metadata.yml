@@ -1,0 +1,24 @@
+category: Unknown
+cve: null
+cwe: null
+description: null
+elementChecked: FunctionCall
+file: rule.js
+id: 24
+language: Python
+message: default message
+name: replace-format-string
+pattern: null
+patternMultiline: false
+ruleType: Ast
+severity: 4
+tests:
+- fail: true
+  file: tests/with-function-calls.js
+  name: with-function-calls
+- fail: true
+  file: tests/in-function.py.js
+  name: in-function.py
+- fail: true
+  file: tests/replace-format-string.py.js
+  name: replace-format-string.py

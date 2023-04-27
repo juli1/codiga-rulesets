@@ -1,0 +1,1 @@
+Ensure that the `.format` method has enough arguments.

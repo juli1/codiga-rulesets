@@ -1,0 +1,24 @@
+category: Best_Practice
+cve: null
+cwe: null
+description: VGhpcyBydWxlIGNoZWNrcyB3aGV0aGVyOgotIHRoZSByZXN1bHQgaXMgZGVzdHJ1Y3R1cmVkCi0gdGhlIHVzZXIgaGFzIGRlc3RydWN0dXJlZCB0aGUgc2V0dGVyCi0gdGhlIHNldHRlciBoYXMgZm9sbG93ZWQgdGhlIHByb3BlciBuYW1pbmcgY29udmVudGlvbgoKVmlldyBhIHNpbWlsYXIgW0VTTGludF0oaHR0cHM6Ly9naXRodWIuY29tL2pzeC1lc2xpbnQvZXNsaW50LXBsdWdpbi1yZWFjdC9ibG9iL21hc3Rlci9kb2NzL3J1bGVzL2hvb2stdXNlLXN0YXRlLm1kKSBydWxlLg==
+elementChecked: Assignment
+file: rule.js
+id: 108
+language: Javascript
+message: default message
+name: hook-use-state
+pattern: null
+patternMultiline: false
+ruleType: Ast
+severity: 3
+tests:
+- fail: false
+  file: tests/valid-use-state.jsx.js
+  name: valid-use-state.jsx
+- fail: true
+  file: tests/invalid-setter-naming.jsx.js
+  name: invalid-setter-naming.jsx
+- fail: true
+  file: tests/missing-setter.jsx.js
+  name: missing-setter.jsx

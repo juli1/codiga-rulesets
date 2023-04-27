@@ -1,0 +1,21 @@
+category: Unknown
+cve: null
+cwe: null
+description: null
+elementChecked: FunctionDefinition
+file: rule.js
+id: 246
+language: Python
+message: default message
+name: function-variable-argument-name
+pattern: null
+patternMultiline: false
+ruleType: Ast
+severity: 4
+tests:
+- fail: false
+  file: tests/fail.py.js
+  name: fail.py
+- fail: false
+  file: tests/fail.py.js
+  name: fail.py

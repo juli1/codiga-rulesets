@@ -1,0 +1,24 @@
+category: Security
+cve: null
+cwe: '295'
+description: VGhlIGNhbGwgdG8gYF9jcmVhdGVfdW52ZXJpZmllZF9jb250ZXh0YCBmcm9tIHRoZSBzc2wgbW9kdWxlIGJ5cGFzcyBjZXJ0aWZpY2F0ZXMgdmVyaWZpY2F0aW9uLiBJdCBzaG91bGQgbm90IGJlIHVzZWQgYW5kIGluc3RlYWQsIGNlcnRpZmljYXRlcyBtdXN0IGJlIHZlcmlmaWVkLg==
+elementChecked: FunctionCall
+file: rule.js
+id: 152
+language: Python
+message: default message
+name: ssl-unverified-context
+pattern: null
+patternMultiline: false
+ruleType: Ast
+severity: 1
+tests:
+- fail: false
+  file: tests/no-error.py.js
+  name: no-error.py
+- fail: false
+  file: tests/no-ssl-module.py.js
+  name: no-ssl-module.py
+- fail: true
+  file: tests/has-error.py.js
+  name: has-error.py

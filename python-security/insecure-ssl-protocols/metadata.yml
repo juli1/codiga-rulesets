@@ -1,0 +1,18 @@
+category: Security
+cve: '757'
+cwe: null
+description: VGhlIGZvbGxvd2luZyBzZWN1cml0eSBwcm90b2NvbHMgc2hvdWxkIG5ldmVyIGJlIHVzZWQgaW4gUHl0aG9uOiBgU1NMdjNgLCBgU1NMdjJgLCBgVExTdjFgLiBGb3IgbW9yZSBkZXRhaWxzLCByZWFkIHRoZSBbU1NMIG1vZHVsZSBwYWdlXShodHRwczovL2RvY3MucHl0aG9uLm9yZy8zL2xpYnJhcnkvc3NsLmh0bWwpIG9mIHRoZSBvZmZpY2lhbCBkb2N1bWVudGF0aW9uLgoKVGhlIGlzc3VlIGFkZHJlc3NlcyB0aGUgW0NXRS03NTddKGh0dHBzOi8vY3dlLm1pdHJlLm9yZy9kYXRhL2RlZmluaXRpb25zLzc1Ny5odG1sKSAtIHNlbGVjdGlvbiBvZiBsZXNzLXNlY3VyZSBhbGdvcml0aG0gZHVyaW5nIG5lZ290aWF0aW9uLgoK
+elementChecked: FunctionCall
+file: rule.js
+id: 9
+language: Python
+message: default message
+name: insecure-ssl-protocols
+pattern: null
+patternMultiline: false
+ruleType: Ast
+severity: 1
+tests:
+- fail: true
+  file: tests/insecure-protocol.py.js
+  name: insecure-protocol.py

@@ -1,0 +1,24 @@
+category: Security
+cve: null
+cwe: '280'
+description: TWFrZSBzdXJlIHRoYXQgcHJvZ3JhbXMgZG8gbm90IGxldCB3cml0ZSBwZXJtaXNzaW9ucyBmb3IgYWxsIHVzZXJzLiBXaGVuIHVzaW5nIGBvcy5jaG1vZGAsIHRoZSB1c2VyIHNob3VsZCBuZXZlciB1c2UgYFNfSVdPVEhgIHRoYXQgZ2l2ZXMgdGhlIHBlcm1pc3Npb24gdG8gYWxsIHVzZXJzIHRvIHdyaXRlIHRoZSBmaWxlIG9uIHRoZSBmaWxlc3lzdGVtLgoKSW5zdGVhZCwgdGhpcyBwZXJtaXNzaW9uIHNob3VsZCBiZSByZW1vdmVkLCBhbmQgcHJvcGVyIGNvbnRyb2wgYWNjZXNzIHNob3VsZCBiZSBjb25maWd1cmVkLgoKU2VlIHRoZSBmb2xsb3dpbmcgcmVsYXRlZCBDV0U6CiAtIFtDV0UtMjc1XShodHRwczovL2N3ZS5taXRyZS5vcmcvZGF0YS9kZWZpbml0aW9ucy8yNzUuaHRtbCkgY2F0ZWdvcnkgLSBQZXJtaXNzaW9uIElzc3VlcwogLSBbQ1dFLTI4MF0oaHR0cHM6Ly9jd2UubWl0cmUub3JnL2RhdGEvZGVmaW5pdGlvbnMvMjgwLmh0bWwpIC0gSW1wcm9wZXIgSGFuZGxpbmcgb2YgSW5zdWZmaWNpZW50IFBlcm1pc3Npb25zIG9yIFByaXZpbGVnZXM=
+elementChecked: null
+file: rule.js
+id: 2
+language: Python
+message: default message
+name: file-write-others
+pattern: os.chmod(${file}, ${mode})
+patternMultiline: false
+ruleType: Pattern
+severity: 2
+tests:
+- fail: false
+  file: tests/test_chmod.py.js
+  name: test_chmod.py
+- fail: false
+  file: tests/chmod-safe.py.js
+  name: chmod-safe.py
+- fail: true
+  file: tests/chmod.py.js
+  name: chmod.py

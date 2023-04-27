@@ -1,0 +1,21 @@
+category: Error_Prone
+cve: null
+cwe: null
+description: VGhpcyBydWxlIHdhcm5zIG9uY2UgYSBmdW5jdGlvbiBoYXMgZml2ZSBwYXJhbWV0ZXJzIGJlY2F1c2UgdGhpcyBjYW4gYmUgZGlmZmljdWx0IHRvIG1haW50YWluLgoKSWYgeW91IG5lZWQgdGhpcyBtYW55IHBhcmFtZXRlcnMsIHlvdSBtaWdodCBiZSBiZXR0ZXIgb2ZmIGNvbWJpbmluZyB0aGUgcGFyYW1ldGVycyBpbnRvIGFuIG9iamVjdCBvciBzcGxpdHRpbmcgeW91ciBmdW5jdGlvbi4=
+elementChecked: Assignment
+file: rule.js
+id: 133
+language: Javascript
+message: default message
+name: max-params-function-assign
+pattern: null
+patternMultiline: false
+ruleType: Ast
+severity: 4
+tests:
+- fail: true
+  file: tests/unacceptable.js.js
+  name: unacceptable.js
+- fail: false
+  file: tests/acceptable.js.js
+  name: acceptable.js

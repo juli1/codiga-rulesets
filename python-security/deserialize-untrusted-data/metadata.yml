@@ -1,0 +1,27 @@
+category: Security
+cve: null
+cwe: '502'
+description: RG8gbm90IGRlc2VyaWFsaXplIHVudHJ1c3RlZCBkYXRhLiBNYWtlIHN1cmUgeW91IHVzZSBhbHRlcm5hdGl2ZXMgdG8gY2hlY2sgdGhhdCB0aGUgZGF0YSBjYW4gYmUgZGVzZXJpYWxpemVkIHNhZmVseS4gVGhlcmUgaXMgbm8gd29ya2Fyb3VuZCBhcm91bmQgdGhpczogdW5sZXNzIHlvdSAqKnJlYWxseSoqIHRydXN0IHRoZSBkYXRhIHNvdXJjZSwgaXQncyBiZXR0ZXIgdG8gdXNlIGFub3RoZXIgd2F5IHRvIGV4Y2hhbmdlIGRhdGEsIHN1Y2ggYXMgYW4gQVBJIG9yIG90aGVyIHByb3RvY29scyBzdWNoIGFzIFtwcm90b2J1Zl0oaHR0cHM6Ly9kZXZlbG9wZXJzLmdvb2dsZS5jb20vcHJvdG9jb2wtYnVmZmVycykgb3IgW3RocmlmdF0oaHR0cHM6Ly90aHJpZnQuYXBhY2hlLm9yZy8pLgoKKipSZWFkIE1vcmUqKgoKIC0gW1Vuc2FmZSBEZXNlcmlhbGl6YXRpb24gaW4gUHl0aG9uIChDV0UtNTAyKV0oaHR0cHM6Ly93d3cuY29kaWdhLmlvL2Jsb2cvcHl0aG9uLXVuc2FmZS1kZXNlcmlhbGl6YXRpb24vKQoKIC0gW0NXRS01MDI6IERlc2VyaWFsaXphdGlvbiBvZiBVbnRydXN0ZWQgRGF0YV0oaHR0cHM6Ly9jd2UubWl0cmUub3JnL2RhdGEvZGVmaW5pdGlvbnMvNTAyLmh0bWwp
+elementChecked: FunctionCall
+file: rule.js
+id: 26
+language: Python
+message: default message
+name: deserialize-untrusted-data
+pattern: null
+patternMultiline: false
+ruleType: Ast
+severity: 1
+tests:
+- fail: true
+  file: tests/marshal.py.js
+  name: marshal.py
+- fail: false
+  file: tests/pickle_test.py.js
+  name: pickle_test.py
+- fail: false
+  file: tests/no_import.py.js
+  name: no_import.py
+- fail: true
+  file: tests/pickle-loads.py.js
+  name: pickle-loads.py

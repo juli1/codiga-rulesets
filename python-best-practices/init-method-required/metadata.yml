@@ -1,0 +1,24 @@
+category: Unknown
+cve: null
+cwe: null
+description: RW5zdXJlIHRoYXQgYSBjbGFzcyBoYXMgYW4gYF9faW5pdF9fYCBtZXRob2Qu
+elementChecked: ClassDefinition
+file: rule.js
+id: 250
+language: Python
+message: default message
+name: init-method-required
+pattern: null
+patternMultiline: false
+ruleType: Ast
+severity: 4
+tests:
+- fail: true
+  file: tests/class-no-init.py.js
+  name: class-no-init.py
+- fail: false
+  file: tests/class-no-error.py.js
+  name: class-no-error.py
+- fail: false
+  file: tests/class-no-error.py.js
+  name: class-no-error.py

@@ -1,0 +1,33 @@
+category: Security
+cve: null
+cwe: null
+description: TWFrZSBzdXJlIHRvIHVzZSB2YWx1ZXMgdGhhdCBhcmUgKmFjdHVhbGx5KiByYW5kb20uIFRoZSBgcmFuZG9tYCBtb2R1bGUgaW4gUHl0aG9uIHNob3VsZCBnZW5lcmFsbHkgbm90IGJlIHVzZWQgYW5kIHJlcGxhY2VkIHdpdGggdGhlIGBzZWNyZXRzYCBtb2R1bGUsIGFzIG5vdGVkIGluIHRoZSBbb2ZmaWNpYWwgUHl0aG9uIGRvY3VtZW50YXRpb25dKGh0dHBzOi8vZG9jcy5weXRob24ub3JnLzMvbGlicmFyeS9yYW5kb20uaHRtbCkKCiAqKkxlYXJuIE1vcmUqKgoKIC0gW0NXRS0zMzAgLSBodHRwczovL2N3ZS5taXRyZS5vcmcvZGF0YS9kZWZpbml0aW9ucy8zMzAuaHRtbF0oaHR0cHM6Ly9jd2UubWl0cmUub3JnL2RhdGEvZGVmaW5pdGlvbnMvMzMwLmh0bWwpCiAtIFtQeXRob24gcmFuZG9tIG1vZHVsZSBkb2N1bWVudGF0aW9uXShodHRwczovL2RvY3MucHl0aG9uLm9yZy8zL2xpYnJhcnkvcmFuZG9tLmh0bWwpCiAtIFtQeXRob24gc2VjcmV0cyBtb2R1bGUgZG9jdW1lbnRhdGlvbl0oaHR0cHM6Ly9kb2NzLnB5dGhvbi5vcmcvMy9saWJyYXJ5L3NlY3JldHMuaHRtbCNtb2R1bGUtc2VjcmV0cyk=
+elementChecked: FunctionCall
+file: rule.js
+id: 32
+language: Python
+message: default message
+name: avoid-random
+pattern: null
+patternMultiline: false
+ruleType: Ast
+severity: 3
+tests:
+- fail: true
+  file: tests/randrange-from.py.js
+  name: randrange-from.py
+- fail: true
+  file: tests/randdom-from.py.js
+  name: randdom-from.py
+- fail: true
+  file: tests/randrange.py.js
+  name: randrange.py
+- fail: false
+  file: tests/no-random-package.py.js
+  name: no-random-package.py
+- fail: true
+  file: tests/random-with-argument.py.js
+  name: random-with-argument.py
+- fail: true
+  file: tests/use-random-random.py.js
+  name: use-random-random.py

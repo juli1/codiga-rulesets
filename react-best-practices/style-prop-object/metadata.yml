@@ -1,0 +1,21 @@
+category: Best_Practice
+cve: null
+cwe: null
+description: VGhpcyBydWxlIHJlcXVpcmVzIHRoYXQgdGhlIHZhbHVlIG9mIHRoZSBgc3R5bGVgIHByb3AgYmUgYW4gb2JqZWN0IG9yIGEgdmFyaWFibGUgdGhhdCBpcyBhbiBvYmplY3QuCgpWaWV3IGEgc2ltaWxhciBydWxlIGZyb20gRVNMaW50LCBbcmVhY3Qvc3R5bGUtcHJvcC1vYmplY3RdKGh0dHBzOi8vZ2l0aHViLmNvbS9qc3gtZXNsaW50L2VzbGludC1wbHVnaW4tcmVhY3QvYmxvYi9tYXN0ZXIvZG9jcy9ydWxlcy9zdHlsZS1wcm9wLW9iamVjdC5tZCk=
+elementChecked: HtmlElement
+file: rule.js
+id: 135
+language: Javascript
+message: default message
+name: style-prop-object
+pattern: null
+patternMultiline: false
+ruleType: Ast
+severity: 4
+tests:
+- fail: true
+  file: tests/incorrect.jsx.js
+  name: incorrect.jsx
+- fail: false
+  file: tests/correct.jsx.js
+  name: correct.jsx

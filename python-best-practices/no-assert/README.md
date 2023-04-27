@@ -1,0 +1,1 @@
+Avoid having `assert` statements in code as they are not being used when . This rule does not apply to test files (e.g., file ending with `_test.py`).

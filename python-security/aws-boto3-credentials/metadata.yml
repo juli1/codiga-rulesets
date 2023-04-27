@@ -1,0 +1,30 @@
+category: Security
+cve: null
+cwe: '798'
+description: VGhpcyBydWxlIG1ha2VzIHN1cmUgdGhhdCB0aGUgYGJvdG8zYCBsaWJyYXJ5IHVzZSB0aGUgZW52aXJvbm1lbnRzIHZhcmlhYmxlcyB0byBhdXRoZW50aWNhdGUgaW5zdGVhZCBvZiB1c2luZyBoYXJkY29kZWQgY3JlZGVudGlhbHMuIFRoaXMgcnVsZSBjaGVja3MgZm9yIHRoZSBgYm90bzMuY2xpZW50YCBhbmQgYGJvdG8zLlNlc3Npb25gIGNhbGxzLiBJdCBhZGRyZXNzZXMgdGhlIFtDV0UtNzk4IHJ1bGVdKGh0dHBzOi8vY3dlLm1pdHJlLm9yZy9kYXRhL2RlZmluaXRpb25zLzc5OC5odG1sKSAtIHVzZXMgb2YgaGFyZGNvZGVkIGNyZWRlbnRpYWxzIGluIGNvZGUuCgoKKiogTGVhcm4gTW9yZSAqKgoKIC0gW0FXUyBjcmVkZW50aWFsc10oaHR0cHM6Ly9ib3RvMy5hbWF6b25hd3MuY29tL3YxL2RvY3VtZW50YXRpb24vYXBpL2xhdGVzdC9ndWlkZS9jcmVkZW50aWFscy5odG1sI2NvbmZpZ3VyaW5nLWNyZWRlbnRpYWxzKQogLSBbQ1dFLTc5ODogVXNlIG9mIEhhcmQtY29kZWQgQ3JlZGVudGlhbHNdKGh0dHBzOi8vY3dlLm1pdHJlLm9yZy9kYXRhL2RlZmluaXRpb25zLzc5OC5odG1sKQ==
+elementChecked: FunctionCall
+file: rule.js
+id: 22
+language: Python
+message: default message
+name: aws-boto3-credentials
+pattern: null
+patternMultiline: false
+ruleType: Ast
+severity: 1
+tests:
+- fail: true
+  file: tests/test-fail.py.js
+  name: test-fail.py
+- fail: false
+  file: tests/session-no-error.py.js
+  name: session-no-error.py
+- fail: false
+  file: tests/not-passing-access-and-secret-keys.py.js
+  name: not-passing-access-and-secret-keys.py
+- fail: false
+  file: tests/session-error.py.js
+  name: session-error.py
+- fail: false
+  file: tests/not-using-boto3.py.js
+  name: not-using-boto3.py

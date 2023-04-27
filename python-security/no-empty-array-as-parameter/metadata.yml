@@ -1,0 +1,18 @@
+category: Safety
+cve: null
+cwe: null
+description: V2Ugc2hvdWxkIG5ldmVyIHBhc3MgYW4gZW1wdHkgYXJyYXkgcGFyYW1ldGVyIHRvIGEgZnVuY3Rpb24uIEluc3RlYWQsIHVzZSBgTm9uZWAgYW5kIGNoZWNrIHRoZSB2YWx1ZSBpZiBkZWZpbmVkLiBUaGlzIGNhbiBjYXVzZSB1bndhbnRlZCBiZWhhdmlvciBhcyB0aGUgdmFsdWUgb2YgdGhlIGFyZ3VtZW50IGlzIG9ubHkgZXZhbHVhdGVkIG9uY2UuCgoqKlJlYWQgbW9yZSoqCgogLSBbQXZvaWQgdXNpbmcgZW1wdHkgbGlzdCBhcyBkZWZhdWx0IGFyZ3VtZW50XShodHRwczovL25pa29zN2FtLmNvbS9wb3N0cy9tdXRhYmxlLWRlZmF1bHQtYXJndW1lbnRzLyk=
+elementChecked: FunctionDefinition
+file: rule.js
+id: 7
+language: Python
+message: default message
+name: no-empty-array-as-parameter
+pattern: null
+patternMultiline: false
+ruleType: Ast
+severity: 2
+tests:
+- fail: true
+  file: tests/fail.js
+  name: fail

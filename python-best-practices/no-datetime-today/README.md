@@ -1,0 +1,1 @@
+Avoid using `datetime.today()` and use instead `datetime.now()`. The two calls are equivalent (as mentioned in the [official documentation](https://docs.python.org/3/library/datetime.html#datetime.date.today)) and the use of `now()` is more explicit than `today()`.

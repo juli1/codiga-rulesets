@@ -1,0 +1,24 @@
+category: Security
+cve: null
+cwe: '94'
+description: QnkgZGVmYXVsdCwgamluamEyIGlzIG5vdCBhdXRvZXNjYXBpbmcuIFRoaXMgY2FuIGxlYWQgdG8gWFNTIGF0dGFja3MuIFRoZSBgYXV0b2VzY2FwZWAgcGFyYW1ldGVyIHNob3VsZCBhbHdheXMgYmUgYFRydWVgLgoKCioqTGVhcm4gTW9yZSoqCgogLSBbT1dBU1AgWFNTXShodHRwczovL293YXNwLm9yZy93d3ctY29tbXVuaXR5L2F0dGFja3MveHNzLykKIC0gW0NXRS05NCAtIEltcHJvcGVyIENvbnRyb2wgb2YgR2VuZXJhdGlvbiBvZiBDb2RlXShodHRwczovL2N3ZS5taXRyZS5vcmcvZGF0YS9kZWZpbml0aW9ucy85NC5odG1sKQ==
+elementChecked: FunctionCall
+file: rule.js
+id: 33
+language: Python
+message: default message
+name: jinja2-autoescape
+pattern: null
+patternMultiline: false
+ruleType: Ast
+severity: 1
+tests:
+- fail: true
+  file: tests/autoescape-false.py.js
+  name: autoescape-false.py
+- fail: false
+  file: tests/autoescape-true.py.js
+  name: autoescape-true.py
+- fail: false
+  file: tests/autoescape-select.py.js
+  name: autoescape-select.py

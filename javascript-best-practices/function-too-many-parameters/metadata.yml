@@ -1,0 +1,21 @@
+category: Best_Practice
+cve: null
+cwe: null
+description: RnVuY3Rpb25zIHNob3VsZCBub3QgaGF2ZSB0b28gbWFueSBwYXJhbWV0ZXJzCgpBIGxvbmcgcGFyYW1ldGVyIGxpc3QgY2FuIGluZGljYXRlIHRoYXQgYSBuZXcgc3RydWN0dXJlIHNob3VsZCBiZSBjcmVhdGVkIHRvIHdyYXAgdGhlIG51bWVyb3VzIHBhcmFtZXRlcnMgb3IgdGhhdCB0aGUgZnVuY3Rpb24gaXMgZG9pbmcgdG9vIG1hbnkgdGhpbmdzLgoKIyMgUmVzb3VyY2VzCgpbU29uYXIgcnVsZXMgLSBKYXZhU2NyaXB0IHN0YXRpYyBjb2RlIGFuYWx5c2lzXShodHRwczovL3J1bGVzLnNvbmFyc291cmNlLmNvbS9qYXZhc2NyaXB0L3RhZy9icmFpbi1vdmVybG9hZC9SU1BFQy0xMDcp
+elementChecked: FunctionDefinition
+file: rule.js
+id: 212
+language: Javascript
+message: default message
+name: function-too-many-parameters
+pattern: null
+patternMultiline: false
+ruleType: Ast
+severity: 4
+tests:
+- fail: false
+  file: tests/good.js.js
+  name: good.js
+- fail: true
+  file: tests/bad.js.js
+  name: bad.js

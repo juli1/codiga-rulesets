@@ -1,0 +1,1 @@
+firstVariable, secondVariable = functioncall()

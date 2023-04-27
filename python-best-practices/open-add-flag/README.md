@@ -1,0 +1,1 @@
+If a flag is opened for read-only, no need to put a flag.

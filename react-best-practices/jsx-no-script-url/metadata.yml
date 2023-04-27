@@ -1,0 +1,21 @@
+category: Best_Practice
+cve: null
+cwe: null
+description: VGhpcyBydWxlIHdpbGwgbG9nIGEgd2FybmluZyB3aGVuZXZlciBhIGBocmVmYCBvciBgdG9gIHByb3Agc3RhcnRzIHdpdGggYGphdmFzY3JpcHQ6YC4KClJlYWN0IGNvbnNpZGVycyB0aGlzIHBhdHRlcm4gYXMgYSBkYW5nZXJvdXMgYXR0YWNrIHN1cmZhY2UuCgpJbiBSZWFjdCAxNi45LCBmb3IgYW55IFVSTHMgc3RhcnRpbmcgd2l0aCBgamF2YXNjcmlwdDpgIHRoZXkgd2lsbCBsb2cgYSB3YXJuaW5nLiBJbiBmdXR1cmUgbWFqb3IgcmVsZWFzZXMsIFJlYWN0IHdpbGwgdGhyb3cgYW4gZXJyb3IgaWYgaXQgZW5jb3VudGVycyBhIGBqYXZhc2NyaXB0OmAgVVJMLgoKVmlldyBhIHNpbWlsYXIgcnVsZSBmcm9tIEVTTGludCwgW3JlYWN0L2pzeC1uby1zY3JpcHQtdXJsXShodHRwczovL2dpdGh1Yi5jb20vanN4LWVzbGludC9lc2xpbnQtcGx1Z2luLXJlYWN0L2Jsb2IvbWFzdGVyL2RvY3MvcnVsZXMvanN4LW5vLXNjcmlwdC11cmwubWQpLgoKCgo=
+elementChecked: HtmlElement
+file: rule.js
+id: 136
+language: Javascript
+message: default message
+name: jsx-no-script-url
+pattern: null
+patternMultiline: false
+ruleType: Ast
+severity: 3
+tests:
+- fail: false
+  file: tests/valid.jsx.js
+  name: valid.jsx
+- fail: true
+  file: tests/invalid.jsx.js
+  name: invalid.jsx

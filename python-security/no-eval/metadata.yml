@@ -1,0 +1,24 @@
+category: Security
+cve: null
+cwe: '94'
+description: YGV2YWwoKWAgaXMgaW5zZWN1cmUsIGFuZCB1bmNvbnRyb2xsZWQgZGF0YSBjb3VsZCB0aGVuIGNyZWF0ZSBhIHZ1bG5lcmFiaWxpdHksIGFzIHJlcG9ydGVkIGJ5IHRoZSBbb2ZmaWNpYWwgUHl0aG9uIGRvY3VtZW50YXRpb25dKGh0dHBzOi8vZG9jcy5weXRob24ub3JnLzMvbGlicmFyeS9mdW5jdGlvbnMuaHRtbCNldmFsKS4gR2VuZXJhdGVkIGNvZGUgc2hvdWxkIGJlIGNvbnRyb2xsZWQgYXMgbWVudGlvbmVkIGJ5IFtDV0UtOTRdKGh0dHBzOi8vY3dlLm1pdHJlLm9yZy9kYXRhL2RlZmluaXRpb25zLzk0Lmh0bWwpCgoqKkxlYXJuIE1vcmUqKgoKIC0gW0NXRS05NF0oaHR0cHM6Ly9jd2UubWl0cmUub3JnL2RhdGEvZGVmaW5pdGlvbnMvOTQuaHRtbCkgLSBJbXByb3BlciBDb250cm9sIG9mIEdlbmVyYXRpb24gb2YgQ29kZQogLSBbU2FmZSBhbmQgU2VjdXJlIFB5dGhvbjogZG8gbm90IHVzZSBldmFsKCldKGh0dHBzOi8vd3d3LmNvZGlnYS5pby9ibG9nL3B5dGhvbi1ldmFsLykKCg==
+elementChecked: FunctionCall
+file: rule.js
+id: 10
+language: Python
+message: default message
+name: no-eval
+pattern: null
+patternMultiline: false
+ruleType: Ast
+severity: 1
+tests:
+- fail: false
+  file: tests/from-module.py.js
+  name: from-module.py
+- fail: false
+  file: tests/literal-eval.py.js
+  name: literal-eval.py
+- fail: true
+  file: tests/eval-use.py.js
+  name: eval-use.py

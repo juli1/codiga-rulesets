@@ -1,0 +1,21 @@
+category: Design
+cve: null
+cwe: null
+description: V2hlbiB1c2luZyBgcmV0dXJuYCwgYGJyZWFrYCBvciBgY29udGludWVgIGluIGEgYGZpbmFsbHlgIGJsb2NrLCBpdCB3aWxsIHN0b3AgdGhlIHNwcmVhZCBvZiBhbnkgZXhjZXB0aW9ucyB0aGF0IHdlcmUgdGhyb3duIGluIHRoZSBgdHJ5YCwgYGVsc2VgLCBvciBgZXhjZXB0YCBibG9ja3MgYW5kIHdpbGwgZGlzcmVnYXJkIGFueSByZXR1cm4gc3RhdGVtZW50cy4KCkxlYXJuIG1vcmUgaW4gdGhlIFtvZmZpY2lhbCBQeXRob24gZG9jdW1lbnRhdGlvbl0oaHR0cHM6Ly9kb2NzLnB5dGhvbi5vcmcvMy9yZWZlcmVuY2UvY29tcG91bmRfc3RtdHMuaHRtbCNleGNlcHQpLg==
+elementChecked: TryBlock
+file: rule.js
+id: 204
+language: Python
+message: default message
+name: finally-no-break-continue-return
+pattern: null
+patternMultiline: false
+ruleType: Ast
+severity: 2
+tests:
+- fail: true
+  file: tests/error-return.py.js
+  name: error-return.py
+- fail: true
+  file: tests/error-continue.py.js
+  name: error-continue.py

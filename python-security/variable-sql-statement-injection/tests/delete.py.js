@@ -1,0 +1,1 @@
+v = f"DELETE FROM bar WHERE plop={bli}"

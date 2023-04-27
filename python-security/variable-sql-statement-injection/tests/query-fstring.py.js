@@ -1,0 +1,1 @@
+v = f"SELECT foo FROM bar WHERE plop={bli}"

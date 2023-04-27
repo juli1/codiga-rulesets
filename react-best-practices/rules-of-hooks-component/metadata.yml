@@ -1,0 +1,27 @@
+category: Unknown
+cve: null
+cwe: null
+description: null
+elementChecked: Assignment
+file: rule.js
+id: 153
+language: Javascript
+message: default message
+name: rules-of-hooks-component
+pattern: null
+patternMultiline: false
+ruleType: Ast
+severity: 4
+tests:
+- fail: true
+  file: tests/callback.js.js
+  name: callback.js
+- fail: true
+  file: tests/test-hook-inside-function.js.js
+  name: test-hook-inside-function.js
+- fail: false
+  file: tests/use-before-if.js.js
+  name: use-before-if.js
+- fail: true
+  file: tests/use-effect-after-if.js.js
+  name: use-effect-after-if.js

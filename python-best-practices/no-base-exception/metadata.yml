@@ -1,0 +1,27 @@
+category: Unknown
+cve: null
+cwe: null
+description: null
+elementChecked: Any
+file: rule.js
+id: 247
+language: Python
+message: default message
+name: no-base-exception
+pattern: null
+patternMultiline: false
+ruleType: Ast
+severity: 4
+tests:
+- fail: true
+  file: tests/no-exception.py.js
+  name: no-exception.py
+- fail: true
+  file: tests/error-if.py.js
+  name: error-if.py
+- fail: true
+  file: tests/error.py.js
+  name: error.py
+- fail: true
+  file: tests/error-for.py.js
+  name: error-for.py

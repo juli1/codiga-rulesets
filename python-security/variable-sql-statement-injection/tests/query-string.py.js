@@ -1,0 +1,1 @@
+v = "SELECT foo FROM bar WHERE plop={0}".format(bli)

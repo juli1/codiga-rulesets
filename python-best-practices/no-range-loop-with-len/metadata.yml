@@ -1,0 +1,24 @@
+category: Best_Practice
+cve: null
+cwe: null
+description: RG8gbm90IGl0ZXJhdGUgb3ZlciBhbiBhcnJheSB1c2luZyBgZm9yIGluIHJhbmdlKGxlbihhcnJheSkpYC4gVXNlIGluc3RlYWQgYGZvciBpIGluIGFycmF5YC4=
+elementChecked: ForLoop
+file: rule.js
+id: 6
+language: Python
+message: default message
+name: no-range-loop-with-len
+pattern: null
+patternMultiline: false
+ruleType: Ast
+severity: 3
+tests:
+- fail: true
+  file: tests/use-range-len.py.js
+  name: use-range-len.py
+- fail: true
+  file: tests/use-range-len-assignment.py.js
+  name: use-range-len-assignment.py
+- fail: false
+  file: tests/iterate-over-values.py.js
+  name: iterate-over-values.py

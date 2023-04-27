@@ -1,0 +1,24 @@
+category: Security
+cve: null
+cwe: null
+description: VGhpcyBydWxlIGVuZm9yY2VzIHB1dHRpbmcgYSBgcmVsPSJub29wZW5lciJgLCBgcmVsPSJub3JlZmVycmVyImAgb3IgYHJlbD0ibm9vcGVuZXIgbm9yZWZlcnJlciJgIG9uIGFuY2hvciBlbGVtZW50cyB3aGVuIGB0YXJnZXQ9Il9ibGFuayJgIGlzIHByZXNlbnQu
+elementChecked: HtmlElement
+file: rule.js
+id: 110
+language: Javascript
+message: default message
+name: no-target-blank
+pattern: null
+patternMultiline: false
+ruleType: Ast
+severity: 3
+tests:
+- fail: true
+  file: tests/missing-rel.jsx.js
+  name: missing-rel.jsx
+- fail: false
+  file: tests/valid-anchors.jsx.js
+  name: valid-anchors.jsx
+- fail: true
+  file: tests/blank-rel.js.js
+  name: blank-rel.js

@@ -1,0 +1,1 @@
+print("foo {0} {1}".format("bar", compute(2)))

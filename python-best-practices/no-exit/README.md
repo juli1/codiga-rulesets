@@ -1,0 +1,1 @@
+Use `sys.exit()` instead of `exit()`. Exit is a [builtin](https://docs.python.org/3/library/constants.html#exit) and done mostly for the console. `sys.exit()` is done for program with a proper return argument ([see documentation](https://docs.python.org/3/library/sys.html#sys.exit)).

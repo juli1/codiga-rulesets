@@ -1,0 +1,27 @@
+category: Security
+cve: null
+cwe: '377'
+description: VXNpbmcgaW5zZWN1cmUgdGVtcG9yYXJ5IGZpbGVzIG1ha2VzIHlvdXIgcHJvZ3JhbSB2dWxuZXJhYmxlIHRvIGF0dGFja3MuIFRoZSBvZmZpY2lhbCBbUHl0aG9uIGRvY3VtZW50YXRpb25dKGh0dHBzOi8vZG9jcy5weXRob24ub3JnLzMvbGlicmFyeS90ZW1wZmlsZS5odG1sKSByZXBvcnRzIHRoaXMgbW9kdWxlIGJlaW5nIHZ1bG5lcmFibGUgdG8gYXR0YWNrcy4gSW5zdGVhZCBvZiBgbWt0ZW1wYCwgdXNlIHRoZSBzZWN1cmUgdmVyc2lvbiBgbWtzdGVtcCgpYC4gCgoKKipMZWFybiBNb3JlKioKCiAtIFtDV0UtMzc3IC0gSW5zZWN1cmUgVGVtcG9yYXJ5IEZpbGVdKGh0dHBzOi8vY3dlLm1pdHJlLm9yZy9kYXRhL2RlZmluaXRpb25zLzM3Ny5odG1sKQogLSBbUHl0aG9uIGRvY3VtZW50YXRpb24gZm9yIG1rdGVtcCgpXShodHRwczovL2RvY3MucHl0aG9uLm9yZy8zL2xpYnJhcnkvdGVtcGZpbGUuaHRtbCkK
+elementChecked: FunctionCall
+file: rule.js
+id: 31
+language: Python
+message: default message
+name: mktemp
+pattern: null
+patternMultiline: false
+ruleType: Ast
+severity: 1
+tests:
+- fail: true
+  file: tests/from-import.py.js
+  name: from-import.py
+- fail: false
+  file: tests/use-tempfile-no-import.py.js
+  name: use-tempfile-no-import.py
+- fail: false
+  file: tests/use-mkstemp.py.js
+  name: use-mkstemp.py
+- fail: true
+  file: tests/use-tempfile.py.js
+  name: use-tempfile.py

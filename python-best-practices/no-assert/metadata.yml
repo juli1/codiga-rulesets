@@ -1,0 +1,21 @@
+category: Best_Practice
+cve: null
+cwe: null
+description: QXZvaWQgaGF2aW5nIGBhc3NlcnRgIHN0YXRlbWVudHMgaW4gY29kZSBhcyB0aGV5IGFyZSBub3QgYmVpbmcgdXNlZCB3aGVuIC4gVGhpcyBydWxlIGRvZXMgbm90IGFwcGx5IHRvIHRlc3QgZmlsZXMgKGUuZy4sIGZpbGUgZW5kaW5nIHdpdGggYF90ZXN0LnB5YCku
+elementChecked: null
+file: rule.js
+id: 1
+language: Python
+message: default message
+name: no-assert
+pattern: assert ${arguments}
+patternMultiline: false
+ruleType: Pattern
+severity: 3
+tests:
+- fail: true
+  file: tests/assert.py.js
+  name: assert.py
+- fail: false
+  file: tests/assert_test.py.js
+  name: assert_test.py

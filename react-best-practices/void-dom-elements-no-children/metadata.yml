@@ -1,0 +1,21 @@
+category: Best_Practice
+cve: null
+cwe: null
+description: VGhpcyBydWxlIHdpbGwgbm90aWZ5IHlvdSB3aGVuIHlvdSBoYXZlIHBhc3NlZCBjaGlsZHJlbiB0byBhIHNlbGYtY2xvc2luZyBIVE1MIGVsZW1lbnQuCgpUaGVzZSBlbGVtZW50cyBhcmUga25vd24gYXMgdm9pZCBET00gZWxlbWVudHMuCgpWaWV3IGEgc2ltaWxhciBydWxlIGZyb20gRVNMaW50LCBbcmVhY3Qvdm9pZC1kb20tZWxlbWVudHMtbm8tY2hpbGRyZW5dKGh0dHBzOi8vZ2l0aHViLmNvbS9qc3gtZXNsaW50L2VzbGludC1wbHVnaW4tcmVhY3QvYmxvYi9tYXN0ZXIvZG9jcy9ydWxlcy92b2lkLWRvbS1lbGVtZW50cy1uby1jaGlsZHJlbi5tZCkgCgoKCg==
+elementChecked: HtmlElement
+file: rule.js
+id: 134
+language: Javascript
+message: default message
+name: void-dom-elements-no-children
+pattern: null
+patternMultiline: false
+ruleType: Ast
+severity: 3
+tests:
+- fail: true
+  file: tests/incorrect-void-element-usage.jsx.js
+  name: incorrect-void-element-usage.jsx
+- fail: false
+  file: tests/correct-void-element-usage.jsx.js
+  name: correct-void-element-usage.jsx

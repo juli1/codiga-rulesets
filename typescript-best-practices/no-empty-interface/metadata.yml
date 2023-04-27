@@ -1,0 +1,21 @@
+category: Error_Prone
+cve: null
+cwe: null
+description: QW4gZW1wdHkgaW50ZXJmYWNlIGlzIGVxdWl2YWxlbnQgdG8gYW4gZW1wdHkgb2JqZWN0IChge31gKS4gCgpOb3JtYWxseSB5b3UgY2Fubm90IGRpcmVjdGx5IGFzc2lnbiBhbiBvYmplY3QgbGl0ZXJhbCB0byBhIHR5cGUgd2hlbiB0aGUgb2JqZWN0IGxpdGVyYWwgY29udGFpbnMgbW9yZSBwcm9wZXJ0aWVzIHRoYW4gYXJlIHNwZWNpZmllZCBpbiB0aGUgdHlwZS4gIEJ1dCBpbiB0aGUgY2FzZSBvZiBhbiBlbXB0eSBpbnRlcmZhY2UsIHRoaXMgY2hlY2sgaXMgbm90IGRvbmUsIGFuZCBzdWNoIGFzc2lnbm1lbnRzIHdpbGwgYmUgc3VjY2Vzc2Z1bC4gVGhlIHJlc3VsdCBpcyBoaWdobHkgbGlrZWx5IHRvIGNvbmZ1c2UgbWFpbnRhaW5lcnMu
+elementChecked: Interface
+file: rule.js
+id: 217
+language: Typescript
+message: default message
+name: no-empty-interface
+pattern: null
+patternMultiline: false
+ruleType: Ast
+severity: 3
+tests:
+- fail: true
+  file: tests/empty.ts.js
+  name: empty.ts
+- fail: false
+  file: tests/not-empty.ts.js
+  name: not-empty.ts

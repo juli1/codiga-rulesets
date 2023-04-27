@@ -1,0 +1,21 @@
+category: Code_Style
+cve: null
+cwe: null
+description: VGhpcyBydWxlIGhlbHBzIGtlZXAgeW91ciB2YXJpYWJsZSBuYW1pbmcgY29udmVudGlvbnMgY29uc2lzdGVudC4=
+elementChecked: VariableDeclaration
+file: rule.js
+id: 214
+language: Javascript
+message: default message
+name: naming-convention
+pattern: null
+patternMultiline: false
+ruleType: Ast
+severity: 4
+tests:
+- fail: true
+  file: tests/bad.js.js
+  name: bad.js
+- fail: false
+  file: tests/good.js.js
+  name: good.js

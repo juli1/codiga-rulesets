@@ -1,0 +1,1 @@
+This rule enforces putting a `rel="noopener"`, `rel="noreferrer"` or `rel="noopener noreferrer"` on anchor elements when `target="_blank"` is present.

@@ -1,0 +1,1 @@
+Check for declarations of variables for a SQL statement where we have potential SQL injections.

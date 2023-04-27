@@ -1,0 +1,24 @@
+category: Security
+cve: null
+cwe: '78'
+description: TmV2ZXIgaW52b2tlIGBzdWJwcm9jZXNzLlBvcGVuYCB3aXRoIGBzaGVsbCA9IFRydWVgIGxlYWRzIHRvIHVubmVjZXNzYXJ5IHByaXZpbGVnZXMgYW5kIGFjY2VzcyB0byB0aGUgdW5kZXJseWluZyBleGVjdXRpb24gcnVudGltZS4gRXhlY3V0aW9uIHdpdGggYHNoZWxsID0gVHJ1ZWAgc2hvdWxkIGNsZWFybHkgYmUgdmVyaWZpZWQgYW5kIGNoZWNrZWQgZm9yIGNvZGUgaW4gcHJvZHVjdGlvbi4KCioqTGVhcm4gTW9yZSoqCgogLSBbQ1dFLTI1MF0oaHR0cHM6Ly9jd2UubWl0cmUub3JnL2RhdGEvZGVmaW5pdGlvbnMvMjUwLmh0bWwpIC0gRXhlY3V0aW9uIHdpdGggVW5uZWNlc3NhcnkgUHJpdmlsZWdlcwogLSBbQ1dFLTY1N10oaHR0cHM6Ly9jd2UubWl0cmUub3JnL2RhdGEvZGVmaW5pdGlvbnMvNjU3Lmh0bWwpIC0gVmlvbGF0aW9uIG9mIFNlY3VyZSBEZXNpZ24gUHJpbmNpcGxlcw==
+elementChecked: FunctionCall
+file: rule.js
+id: 17
+language: Python
+message: default message
+name: subprocess-shell-true
+pattern: null
+patternMultiline: false
+ruleType: Ast
+severity: 2
+tests:
+- fail: true
+  file: tests/import-from.py.js
+  name: import-from.py
+- fail: true
+  file: tests/with-submodule.py.js
+  name: with-submodule.py
+- fail: false
+  file: tests/no-submodule.py.js
+  name: no-submodule.py

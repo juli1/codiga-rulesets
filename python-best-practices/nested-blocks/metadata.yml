@@ -1,0 +1,27 @@
+category: Unknown
+cve: null
+cwe: null
+description: null
+elementChecked: Any
+file: rule.js
+id: 244
+language: Python
+message: default message
+name: nested-blocks
+pattern: null
+patternMultiline: false
+ruleType: Ast
+severity: 4
+tests:
+- fail: true
+  file: tests/error-for.py.js
+  name: error-for.py
+- fail: true
+  file: tests/error-else.py.js
+  name: error-else.py
+- fail: true
+  file: tests/error-if.py.js
+  name: error-if.py
+- fail: true
+  file: tests/error-elif.py.js
+  name: error-elif.py

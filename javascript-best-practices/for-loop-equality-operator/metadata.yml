@@ -1,0 +1,21 @@
+category: Error_Prone
+cve: null
+cwe: '835'
+description: VGVzdGluZyBhIGBmb3JgIGxvb3AgdGVybWluYXRpb24gdXNpbmcgYW4gZXF1YWxpdHkgb3BlcmF0b3IgKGA9PWAgb3IgYCE9YCkgaXMgZGFuZ2Vyb3VzIGJlY2F1c2UgaXQgY291bGQgc2V0IHVwIGFuIGluZmluaXRlIGxvb3AuCgpDb25zaWRlciB1c2luZyBjb21wYXJpc29uIG9wZXJhdG9ycywgbGVzcyB0aGFuIChgPGApIG9yIGdyZWF0ZXIgdGhhbiAoYD5gKSwgdG8gZGVjcmVhc2UgdGhlIGxpa2VsaWhvb2QgeW91IGFjY2lkZW50YWxseSB3cml0ZSBhbiBpbmZpbml0ZSBsb29wLgoKRXF1YWxpdHkgb3BlcmF0b3JzIGFyZSBpZ25vcmVkIHdoZW4gdGhlIHJpZ2h0IHNpZGUgb2YgdGhlIHRlc3QgaXMgYG51bGxgLg==
+elementChecked: ForLoop
+file: rule.js
+id: 213
+language: Javascript
+message: default message
+name: for-loop-equality-operator
+pattern: null
+patternMultiline: false
+ruleType: Ast
+severity: 4
+tests:
+- fail: false
+  file: tests/index.js.js
+  name: index.js
+- fail: true
+  file: tests/index.js.js
+  name: index.js

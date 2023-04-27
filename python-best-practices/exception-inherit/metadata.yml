@@ -1,0 +1,21 @@
+category: Unknown
+cve: null
+cwe: null
+description: null
+elementChecked: ClassDefinition
+file: rule.js
+id: 230
+language: Python
+message: default message
+name: exception-inherit
+pattern: null
+patternMultiline: false
+ruleType: Ast
+severity: 4
+tests:
+- fail: true
+  file: tests/custom-exception-error.py.js
+  name: custom-exception-error.py
+- fail: false
+  file: tests/custom-exception-error-no-error.py.js
+  name: custom-exception-error-no-error.py

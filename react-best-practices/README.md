@@ -1,0 +1,1 @@
+A ruleset containing React rules to ensure your code follows best practices.

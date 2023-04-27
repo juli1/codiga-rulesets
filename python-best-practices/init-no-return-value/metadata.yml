@@ -1,0 +1,21 @@
+category: Unknown
+cve: null
+cwe: null
+description: null
+elementChecked: ClassDefinition
+file: rule.js
+id: 231
+language: Python
+message: default message
+name: init-no-return-value
+pattern: null
+patternMultiline: false
+ruleType: Ast
+severity: 4
+tests:
+- fail: false
+  file: tests/class-without-error.py.js
+  name: class-without-error.py
+- fail: true
+  file: tests/class-with-error.py.js
+  name: class-with-error.py

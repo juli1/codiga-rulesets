@@ -1,0 +1,21 @@
+category: Design
+cve: null
+cwe: null
+description: VGhlIHNwZWNpZmljIGVycm9yIG11c3QgYmUgcmFpc2VkLCBub3QgYSBnZW5lcmljIGBFeGNlcHRpb25gLiBVc2UgdGhlIGV4YWN0IGV4Y2VwdGlvbihzKSB5b3Ugd2FudCB0byBoYW5kbGUgYW5kIGhhdmUgYSByZWNvdmVyeSBoYW5kbGVyIGZvciBlYWNoIGV4Y2VwdGlvbiB0aGF0IHlvdXIgcHJvZ3JhbSBtYXkgcmFpc2Uu
+elementChecked: TryBlock
+file: rule.js
+id: 13
+language: Python
+message: default message
+name: no-generic-exception
+pattern: null
+patternMultiline: false
+ruleType: Ast
+severity: 2
+tests:
+- fail: false
+  file: tests/clear-exception.py.js
+  name: clear-exception.py
+- fail: true
+  file: tests/generic-exception.py.js
+  name: generic-exception.py

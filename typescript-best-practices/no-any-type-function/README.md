@@ -1,0 +1,1 @@
+Make sure we never use `any` as a type. TypeScript is a type-safe language and property types should be used. See our [blog post](https://www.codiga.io/blog/typescript-avoid-type-any/) for more details.
